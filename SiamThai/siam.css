@@ -1,0 +1,289 @@
+body {
+   padding: 100px;
+   padding-top: 0px;
+}
+
+#mobilelogo {
+    visibility: hidden;
+    display: none;
+}
+
+#siamlogo {
+    width: 100%;
+    height: 205px;
+}
+
+#subject {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#item {
+    padding-left: 22%;
+}
+
+#price {
+    float: right;
+    padding-right: 190px;
+    padding-top: -10px;
+}
+
+#describe {
+    padding-left: 25%;
+    padding-bottom: 20px;
+}
+
+.menu {
+    box-shadow: 6px 6px 6px 6px #b5a642;
+    padding-bottom: 10px;
+    background-color: black;
+    color: #b5a642;
+}
+
+#appetizer {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#soup {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#thai {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#noodles {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#rice {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#curry {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#chefspecial {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+#drinks {
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+a {
+    color: #b5a642;
+}
+
+a:active {
+    color: #65000b;
+}
+
+a:hover, a:focus:hover {
+    color: #65000b;
+}
+
+a:visited {
+    color: #b5a642;
+}
+
+a:hover:not(:focus) {
+    color: #65000b;
+  }
+
+
+
+
+
+
+
+  /*###Tablet(medium)###*/
+@media screen and (min-width : 768px) and (max-width : 1024px){
+
+    #mobilelogo{
+    visibility: visible;
+    display: -moz-inline-stack;
+    background-image: url('../SiamThai/images/blacklogo.jpg');
+    width: 100%;
+    height: 300px;
+    display: block!important;
+    }
+
+    #info {
+        color: white;
+    }
+
+    body {
+        background-color: #373435;
+    }
+
+    #siamlogo{
+        visibility: hidden;
+        display: none;
+    }
+    
+
+     .menu {
+         background-color: #373435
+         
+     }
+
+     #describe {
+         font-size: 11px;
+     }
+
+     a {
+        color: #b5a642;
+    }
+    
+    a:active {
+        color: #65000b;
+    }
+    
+    a:hover, a:focus:hover {
+        color: #65000b;
+    }
+    
+    a:visited {
+        color: #b5a642;
+    }
+    
+    a:hover:not(:focus) {
+        color: #65000b;
+      }
+
+    a:visited {
+        color: #b5a642;
+    }
+
+    #mobilecolor {
+        color: white;
+    }
+     
+}
+
+
+
+
+ /*### Smartphones (portrait and landscape)(small)### */
+ @media screen and (min-width : 0px) and (max-width : 767px){
+
+    
+
+    #mobilelogo{
+    visibility: visible;
+    background-image: url('../SiamThai/images/blacklogo.jpg');
+    width: 100%;
+    height: 90px;
+    display: block!important;
+    }
+
+    #info {
+        color: white;
+        font-size: 9px;
+    }
+
+    body {
+        background-color: #373435;
+        box-sizing: none;
+        padding: 0;
+    }
+
+    #siamlogo{
+        visibility: hidden;
+        display: none;
+    }
+
+    .menu {
+        background-color: #373435;
+        
+    }
+
+    #appetizer {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #soup {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #thai {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #noodles {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #rice {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #curry {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #chefspecial {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #drinks {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+
+    #item {
+        font-size: 17px;
+        margin-left: -40px;
+    }
+
+    #describe {
+        font-size: 13px;
+        padding: 0;
+        margin-left: 70px;
+    }
+
+    #price {
+        padding-right: 20px;
+    }
+
+    #mobilecolor {
+        color: white;
+    }
+
+    a {
+        color: #b5a642;
+    }
+    
+    a:active {
+        color: #b5a642;
+    }
+    
+    a:hover, a:focus:hover {
+        color: #65000b;
+    }
+    
+    a:visited {
+        color: #b5a642;
+    }
+    
+    a:hover:not(:focus) {
+        color: #65000b;
+      }
+ }

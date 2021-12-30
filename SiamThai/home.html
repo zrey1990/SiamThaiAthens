@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="siam.css">
+    <title>Siam Thai</title>
+
+    <img src="../SiamThai/images/whitelogo.png" id="siamlogo">
+    <img src="../SiamThai/images/blacklogo.jpg" id="mobilelogo">
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#appetizer">Appetizer</a>
+        <a href="#soup">Soup</a>
+        <a href="#thai">Thai</a>
+        <a href="#noodles">Noodles</a>
+        <a href="#rice">Rice</a>
+        <a href="#curry">Curry</a>
+        <a href="#chefspecial">Chef Special</a>
+        <a href="#drinks">Drinks</a>
+      </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer" id="mobilecolor"onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position:fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    </head>
+
+
+    
+</head>
+<body>
+
+    <center><p id="info">Visit Us At: <a href="https://www.google.com/maps/place/102+W+Union+St,+Athens,+OH+45701/@39.3291814,-82.10713,17z/data=!3m1!4b1!4m5!3m4!1s0x884873bd97656aa1:0x1c881215b36639f6!8m2!3d39.3291773!4d-82.1049413" target="_blank">102 W Union St, Athens, OH 45701</a> - Phone Number: <a href="tel:7402494115">(740) 249-4115</a></p></center>
+
+    
+
+
+    <style>
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
+        </head>
+        <body>
+        
+        
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Hours</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Monday: Closed</a>
+              <a href="#">Tuesday: 11am-2:30pm/4pm-9pm</a>
+              <a href="#">Wednesday: 11am-2:30pm/4pm-9pm</a>
+              <a href="#">Thursday: 11am-2:30pm/4pm-9pm</a>
+              <a href="#">Friday: 11am-2:30pm/4pm-10pm</a>
+              <a href="#">Saturday: 12pm-9pm</a>
+              <a href="#">Sunday: 12pm-9pm</a>
+          </div>
+        </div>
+        
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+    
+          <br>
+          <br>
+    <div class="menu">
+
+        <br>
+
+    <h1 id="appetizer">Appetizer</h1>
+
+    <h3 id="item">Vegetable Spring Rolls<p id="price">3.95</p></h3>
+    <li id="describe">Fried vegetable filled wonton rolls served with a side of sweet chili sauce</li>
+
+    <h3 id="item">Pork Spring Rolls<p id="price">4.95</p></h3>
+    <li id="describe">Fried pork filled wonton rolls served with a side of sweet chili sauce</li>
+
+    <h3 id="item">Crab Rangoon<p id="price">5.95</p></h3>
+    <li id="describe">Crispy wontons filled with cream cheese, crab meat, scallions, and celery. Served
+    with a side of sweet and sour sauce</li>
+
+    <h3 id="item">Som Tum<p id="price">8.95</p></h3>
+    <li id="describe">Shredded young papaya, carrot, tomato and green been tossed in a lime dressing.
+    Served on a be of lettuce and topped with roasted peanut</li>
+
+    <h3 id="item">Chicken Satay<p id="price">8.95</p></h3>
+    <li id="describe">Marinated strips of chicken skewered and grilled. Served with a side of peanut
+    sauce and cucumber relish</li>
+
+    <h3 id="item">Edamame<p id="price">4.95</p></h3>
+    <li id="describe">Steamed young soybeans sprinkled with salt</li>
+
+    <h3 id="item">Summer Roll &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp*Add Shrimp 7.95*<p id="price">4.95</p></h3>
+    <li id="describe">Fresh vegetables and rice noodles wrapped in rice paper. Served with a side of
+    hoisin sauce</li>
+
+    <h3 id="item">Potstickers<p id="price">4.95</p></h3>
+    <li id="describe">Pork dumplings fried and served with a sweet and sour sauce</li>
+
+    <h3 id="item">Fried Calamari<p id="price">10.95</p></h3>
+    <li id="describe">Lightly battered calamari rings served with sweet and sour sauce</li>
+
+    <h3 id="item">Garlic Pepper Calamari<p id="price">11.95</p></h3>
+    <li id="describe">Lightly battered calamari rings, quickly tossed in brown garlic sauce with basil
+    and jalapeno</li>
+
+    <h3 id="item">Chicken Wings<p id="price">7.95</p></h3>
+    <li id="describe">Deep-fried chicken wings served with a side of sweet chili dipping sauce</li>
+
+    <h3 id="item">Spicy Basil Chicken Wings<p id="price">8.95</p></h3>
+    <li id="describe">Deep-fried chicken wings quickly tossed in light brown sauce with basil, garlic,
+    and jalapeno</li>
+
+    <h3 id="item">Crispy Tofu<p id="price">7.95</p></h3>
+    <li id="describe">Fried tofu squares served with sweet chili sauce</li>
+
+    <h3 id="item">Mala String Beans<p id="price">8.95</p></h3>
+    <li id="describe">Fresh green beans stir-fried in a light brown sauce with jalapeno
+    and garlic</li>
+
+
+
+
+
+
+    <h1 id="soup">Soup</h1>
+
+    <h3 id="item">Wonton<p id="price">4.95</p></h3>
+    <li id="describe">Chicken wontons and fresh vegatables in a chicken broth</li>
+
+    <h3 id="item">Tom Kha Gai<p id="price">9.95</p></h3>
+    <li id="describe">Coconut soup with chicken, tomato, mushrooms, onions, galanga, lime leaf,
+        and lemongross</li>
+
+    <h3 id="item">Tom Yum Soup - Chicken 9.95 / Shrimp 13.95 / Mix Seafood 15.95<p id="price"></p></h3>
+    <li id="describe">Clear lemongrass soup with galanga, lime leaf, tomato, and mushroom</li>
+
+    <h3 id="item">Chicken Pho<p id="price">12.95</p></h3>
+    <li id="describe">Slicked chicken breast and rice noodles in chicken broth served with side of bean
+        sprouts, lime basil, and jalapeno</li>
+
+    <h3 id="item">Shrimp Pho<p id="price">13.95</p></h3>
+    <li id="describe">Shrimp and rice noodles in chicken broth served with side of bean sprouts,
+        lime, basil, and jalapeno</li>
+
+
+
+
+
+
+    <h1 id="thai">Thai</h1>
+
+    <h3 id="item">*Served with white or brown rice*</h3>
+
+    <h3 id="item">Kanar Moo Krob<p id="price">14.95</p></h3>
+    <li id="describe">Sliced fried pork belly and Chinese broccoli in a spicy brown sauce</li>
+    
+    <h3 id="item">Pad Phet<p id="price">14.95</p></h3>
+    <li id="describe">Sliced fried pork belly with red bell pepper, bamboo, and basil. Stir-fried in
+        a spicy brown sauce and red curry paste.</li>
+
+    <h3 id="item">Spicy Eggplant<p id="price">11.95</p></h3>
+    <li id="describe">Japanese eggplant and tofu fried golden brown, tossed with bell pepers, 
+        onions,, and basil in a spicy sauce</li>
+
+    <h3 id="item">Moo Gra Tiem<p id="price">12.95</p></h3>
+    <li id="describe">Crispy garlic pork stir-fried with white onions in a black pepper sauce</li>
+
+    <h3 id="item">Pra Raum Long Song<p id="price">12.95</p></h3>
+    <li id="describe">Tender chicken breast stir-fried in a peanut curry sauce served on a bed of
+        broccoli and napa</li> 
+
+    <h3 id="item">Pad Ka-Pow - Chicken 12.95 - Pork 12.95 - Beef 14.95<p id="price"></p></h3>
+    <li id="describe">Minced meat, onions, bell peppers, and basil stir-fried in a spicy 
+        brown sauce</li>
+
+    <h3 id="item">Himmapan Chicken<p id="price">12.95</p></h3>
+    <li id="describe">Lightly battered chicken breast tossed with onions, bell peppers, nushrooms,
+        and roasted cashews in a garlic sauce</li>
+
+    <h3 id="item">Island Chicken<p id="price">12.95</p></h3>
+    <li id="describe">Lightly battered chicken breast tossed with carrot, onion, pineapple, and
+        red bell pepper in a spicy coconut sauce</li>
+
+    <h3 id="item">Larb Gai  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp*Sticky Rice +3.00*<p id="price">12.95</p></h3>
+    <li id="describe">Steamed minced chicken tossed with onions, cilantro, mint, and lime
+        dressing</li>
+
+    <h3 id="item">Naum Toak&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        *Sticky Rice +3.00*<p id="price">14.95</p></h3>
+    <li id="describe">Grilled steak thinly sliced with tossed onions, mint, cilantro, and lime
+        dressing</li>
+
+    <h3 id="item">Pad Pak<p id="price">11.95</p></h3>
+    <li id="describe">Fresh colorful vegatables stir-fried in a brown garlic sauce</li>
+
+    <h3 id="item">Pad Ginger<p id="price">12.95</p></h3>
+    <li id="describe">Thinly sliced chicken breast stir-friend with onions, bell peppers, green
+        beans, mushrooms, and fresh ginger in a light brown sauce</li>
+
+    <h3 id="item">Pad Prik Khing - Chicken 12.95 - Pork Belly 14.95 - Beef 14.95 - Shrimp 14.95</h3>
+    <li id="describe">Green beans, red bell peppers, and onion in a spicy red curry sauce</li>
+
+
+
+
+
+    <h1 id="noodles">Noodles</h1>
+
+    <h3 id="item">Vegetables 11.95 - Tofu 11.95 - Chicken 12.95 - Pork 12.95</h3>
+    <h3 id="item">Shrimp 14.95 - Beef 14.95 - Combo 15.95 - Mixed Seafood 16.95</h3>
+
+    <br>
+    <h3 id="item">Pad Thai</h3>
+    <li id="describe">Rice noodles, egg, bean sprouts, and scallions stir-fried in a tamarind sauce
+        served with a side of peanuts and lime</li>
+
+    <h3 id="item">Pad Kee Mao</h3>
+    <li id="describe">Hofun rice noodles, bell peppers, onions, green beans, and basil in a spicy
+        sauce</li>
+
+    <h3 id="item">Singapore Noodle</h3>
+    <li id="describe">Thin glass noodles stir-friend in a yellow curry powder with eggs, onion,
+        carrots, and napa cabbage</li>
+
+    <h3 id="item">Lo Mein</h3>
+    <li id="describe">Egg noodles stir-fried with vegatables in a peppery brown sauce</li>
+
+    <h3 id="item">Ladh Na</h3>
+    <li id="describe">Hofun rice noodles, Chinese broccoli, carrot, egg, and napa cabbage covered in
+        a thickened soybean sauce</li>
+
+    <h3 id="item">Pad Woonsen</h3>
+    <li id="describe">Thin glass noodles stir-fried with mixed vegatables and egg in a light
+        garlic sauce</li>
+
+    <h3 id="item">Pad See You</h3>
+    <li id="describe">Hofun rice noodles, Chinese broccoli, carrots, and egg in a light
+        soybean sauce</li>
+
+
+
+
+
+    <h1 id="rice">Rice</h1>
+
+    <h3 id="item">Vegetables 11.95 - Tofu 11.95 - Chicken 12.95 - Pork 12.95</h3>
+    <h3 id="item">Shrimp 14.95 - Beef 14.95 - Combo 15.95 - Mixed Seafood 16.95</h3>
+
+    <br>
+    <h3 id="item">Thai Fried Rice</h3>
+    <li id="describe">Egg, peas, carrots, and onions</li>
+
+    <h3 id="item">Curry Fried Rice</h3>
+    <li id="describe">Curry seasoned with carrot, pineapple, onion, raisin, tomato, and eggplant</li>
+
+    <h3 id="item">Basil Fried Rice</h3>
+    <li id="describe">Basil, green bean, onion, and egg</li>
+
+    <h3 id="item">Tom Yum Fried Rice</h3>
+    <li id="describe">Carrot, mushrooms, onion, tomato, basil, and lime leaf with tom yum chili paste</li>
+
+
+
+
+
+
+
+    <h1 id="curry">Curry</h1>
+
+    <h3 id="item">Vegetables 11.95 - Tofu 11.95 - Chicken 12.95 - Pork 12.95</h3>
+    <h3 id="item">Shrimp 14.95 - Beef 14.95 - Combo 15.95 - Mixed Seafood 16.95</h3>
+    <br>
+    <h3 id="item">Green</h3>
+    <li id="describe">Bamboo shoots, bell pepper, eggplant, green bean, and basil in a spicy green
+        coconut curry</li>
+
+    <h3 id="item">Yellow</h3>
+    <li id="describe">Carrots, white onion, and potatoes in a yellow curry</li>
+
+    <h3 id="item">Red</h3>
+    <li id="describe">Bamboo shoots, bell peppers, and basil in a spicy red coconut curry</li>
+
+    <h3 id="item">Pineapple</h3>
+    <li id="describe">Red bell peppers, onions, pineapples, and carrots in a spicy-sweet yellow
+        coconut curry</li>
+
+    <h3 id="item">Panang</h3>
+    <li id="describe">Bell peppers, bamboo shoots, zucchini, and kaffir lime leaf in a spicy
+        red panang coconut curry</li>
+
+    <h3 id="item">Massaman</h3>
+    <li id="describe">Potato, white onion, carrots, and peanut in a sweet-spicy coconut curry</li>
+
+
+
+
+
+
+    <h1 id="chefspecial">Chef Special</h1>
+    <h3 id="item">*Served with white or brown rice*</h3>
+
+    <h3 id="item">General Tso Chicken<p id="price">12.95</p></h3>
+    <li id="describe">Tender breaded chicken, broccoli, carrot, and water chesnut tossed in a 
+        spicy sauce</li>
+
+    <h3 id="item">Happy Family<p id="price">16.95</p></h3>
+    <li id="describe">Combination of chicken, beef, shrimp, and scallop stir-fried with broccoli,
+        napa cabbage, snow pea, mushroom, baby corn, and carrot in a brown sauce</li>
+
+    <h3 id="item">Hot Pepper Chicken<p id="price">12.95</p></h3>
+    <li id="describe">Tender sliced chicken breast stir-fried with scallions, onions, and jalapeno
+        peppers in a brown sauce</li>
+
+    <h3 id="item">Yum Talay<p id="price">16.95</p></h3>
+    <li id="describe">Shrimp, scallops, mussels, and calamari tossed in a lime vinaigrette with 
+        scallions and onion on a bed of lettuce</li>
+
+    <h3 id="item">Seafood Ka Pow<p id="price">16.95</p></h3>
+    <li id="describe">Shrimp, scallops, mussels, and calamari stir-fried with onion, green bean,
+        and red bell peppers in a garlic basil sauce</li>
+
+    <h3 id="item">Fisherman<p id="price">16.95</p></h3>
+    <li id="describe">Shrimp, scallops, mussels, and calamari stir-fried with onion, bell pepper,
+        tomato, and basil in a spicy garlic sauce</li>
+
+    <h3 id="item">Sweet & Sour Chicken<p id="price">12.95</p></h3>
+    <li id="describe">Tender breaded chicken, bell peppers, pineapple, carrots, and onion with a sweet
+        and sour sauce on the side</li>
+
+    <h3 id="item">Basil Green Mussels<p id="price">17.95</p></h3>
+    <li id="describe">Shell-on mussels stir-fried with basil, onions, and bell peppers in a spicy sauce</li>
+
+    <h3 id="item">Sesame Chicken<p id="price">12.95</p></h3>
+    <li id="describe">Tender breaded chicken tossed with water chestnuts in our house sesame sauce</li>
+
+    <h3 id="item">Pepper Beef<p id="price">14.95</p></h3>
+    <li id="describe">Beef flank stir-fried with bell peppers and onions in a spicy brown sauce</li>
+
+    <h3 id="item">Basil Scallops<p id="price">18.95</p></h3>
+    <li id="describe">Juicy scallops lightly battered and wok-tossed in a basil sauce</li>
+
+
+
+
+
+
+
+    <h1 id="drinks">Drinks</h1>
+
+    <h3 id="item">Fountain Drinks<p id="price">2.00</p></h3>
+    <li id="describe">Pepsi</li>
+    <li id="describe">Diet Pepsi</li>
+    <li id="describe">Mountain Dew</li>
+    <li id="describe">Sierra Mist</li>
+    <li id="describe">Dr Pepper</li>
+    <li id="describe">Mug Root Beer</li>
+
+    <h3 id="item">Iced Tea<p id="price">2.00</p></h3>
+        <br>
+    <h3 id="item">Thai Iced Tea<p id="price">3.00</p></h3>
+        <br>
+    <h3 id="item">Thai Iced Coffee<p id="price">3.00</p></h3>
+        <br>
+    <h3 id="item">Hot Tea<p id="price">2.00</p></h3>
+    <li id="describe">Green</li>
+    <li id="describe">Jasmine</li>
+    <li id="describe">Chrysanthemum</li>
+    <li id="describe">Oolong</li>
+
+    <h3 id="item">Thai Tea Lemonade<p id="price">3.00</p></h3>
+        <br>
+    <h3 id="item">Cranberry Thai Tea<p id="price">3.00</p></h3>
+
+    <br>
+    <br>
+    
+
+</div>
+
+
+</body>
+</html>
